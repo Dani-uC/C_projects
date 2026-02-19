@@ -330,7 +330,7 @@ free(operand2->prev);
 free(operand2);
 	}
 void subtract(node *operand1,node *operand2){
-	 operand1->value=operand1->value+operand2->value;
+	 operand1->value=operand1->value-operand2->value;
 operand1->next=operand2->next;
 if(operand2->next!=NULL)
 operand2->next->prev=operand1;
